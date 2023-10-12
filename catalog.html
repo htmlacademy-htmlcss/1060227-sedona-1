@@ -114,15 +114,19 @@
           </fieldset>
           <fieldset>
             <legend class="catalog-price-title">Стоимость, Р:</legend>
-            <label for="price-start" class="visually-hidden">Цена от</label>
+            <label for="price-start" class="visually-hidden">от</label>
             <input class="field" id="price-start" value="0" placeholder="от" type="text" name="price-start">
-            <label for="price-finish" class="visually-hidden">Цена до</label>
+            <label for="price-finish" class="visually-hidden">до</label>
             <input class="field" id="price-start" value="9000" placeholder="до" type="text" name="price-finish">
-            <!-- <input type="range" min="0" max="9000" step="1" value="6000">-->
+            <!--<div class="slider-price">
+              <input type="range" min="0" max="9000" value="0" id="slider-1">
+              <input type="range" min="0" max="9000" value="6000" id="slider-2">
+            </div> -->  <!--пока не могу разобраться, получилось два ползунка, не понимаю как их объединить и связать с окошками для ввода цен-->
             <button class="button" type="submit">Применить</button>
             <button type="reset" value="Reset">Сбросить</button>
           </fieldset>
         </form>
+        <p class="filter-result">Найдено гостиниц: 38</p>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвые</option>
           <option value="popular">Сначала популярные</option>
@@ -132,7 +136,7 @@
           <span class="visually-hidden">Показать карточки</span>
         </a>
         <a href="#" class="button">
-          <span class="visually-hidden">Показать что-то</span>
+          <span class="visually-hidden">Показать что-то</span> <!-- не поняла, что должно отображаться-->
         </a>
         <a href="#" class="button">
           <span class="visually-hidden">Показать список</span>
@@ -144,7 +148,7 @@
             <span class="hotel-type">Гостиница</span>
             <span class="hotel-price">от 4000 Р</span>
             <a class="hotel-card-detail-link button" href="#">Подробнее</a>
-            <a class="hotel-favourites-link button" href="#">В избранное</a>
+            <button class="button hotel-to-favourites-button" type="submit">В избранное</button>
             <span class="hotel-rating">Рейтинг: 8,5</span>
           </li>
           <li class="hotel-card">
@@ -153,7 +157,7 @@
             <span class="hotel-type">Гостиница</span>
             <span class="hotel-price">от 5000 Р</span>
             <a class="hotel-card-detail-link button" href="#">Подробнее</a>
-            <a class="hotel-favourites-link button button-favourites" href="#">В избранном</a>
+            <button class="button hotel-favourites-button" type="submit">В избранном</button>
             <span class="hotel-rating">Рейтинг: 9,2</span>
           </li>
           <li class="hotel-card">
@@ -162,7 +166,7 @@
             <span class="hotel-type">Гостиница</span>
             <span class="hotel-price">от 2500 Р</span>
             <a class="hotel-card-detail-link button" href="#">Подробнее</a>
-            <a class="hotel-favourites-link button" href="#">В избранное</a>
+            <button class="button hotel-to-favourites-button" type="submit">В избранное</button>
             <span class="hotel-rating">Рейтинг: 6,9</span>
           </li>
           <li class="hotel-card">
@@ -171,16 +175,53 @@
             <span class="hotel-type">Гостиница</span>
             <span class="hotel-price">от 1500 Р</span>
             <a class="hotel-card-detail-link button" href="#">Подробнее</a>
-            <a class="hotel-favourites-link button" href="#">В избранное</a>
+            <button class="button hotel-to-favourites-button" type="submit">В избранное</button>
             <span class="hotel-rating">Рейтинг: 5,0</span>
           </li>
         </ul>
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">5</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">6</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">7</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">8</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">9</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
+        </ul>
       </section>
-
+      <section class="newsletter">
+        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+        <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="newsletter-date" class="visually-hidden">Email</label>
+          <input class="field" id="newsletter-date" placeholder="Ваш e-mail" type="email" name="newsletter-date">
+          <button class="button" type="submit">Подписаться</button>
+        </form>
+      </section>
     </main>
-
-
-
     <footer class="page-footer">
       <section class="footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>
