@@ -118,10 +118,11 @@
             <input class="field" id="price-start" value="0" placeholder="от" type="text" name="price-start">
             <label for="price-finish" class="visually-hidden">до</label>
             <input class="field" id="price-start" value="9000" placeholder="до" type="text" name="price-finish">
-            <!--<div class="slider-price">
-              <input type="range" min="0" max="9000" value="0" id="slider-1">
-              <input type="range" min="0" max="9000" value="6000" id="slider-2">
-            </div> -->  <!--пока не могу разобраться, получилось два ползунка, не понимаю как их объединить и связать с окошками для ввода цен-->
+            <div class="range">
+              <div class="line"></div>
+              <button type="button"><button>
+              <button type="button"><button>
+            </div>
             <button class="button" type="submit">Применить</button>
             <button type="reset" value="Reset">Сбросить</button>
           </fieldset>
@@ -132,50 +133,52 @@
           <option value="popular">Сначала популярные</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a class="button button-black" href="#">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a href="#" class="button">
-          <span class="visually-hidden">Показать что-то</span> <!-- не поняла, что должно отображаться-->
-        </a>
-        <a href="#" class="button">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+        <div class="view-card">
+          <a class="button button-black" href="#">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a href="#" class="button">
+            <span class="visually-hidden">Показать что-то</span> <!-- не поняла, что должно отображаться-->
+          </a>
+          <a href="#" class="button">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+        </div>
         <ul class="hotel-list">
           <li class="hotel-card">
-            <img class="hotel-card-image" src="#" alt="Amara Resort & Spa">
-            <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+            <a class="hotel-image-link" href="#"><img class="hotel-card-image" src="#" alt="Amara Resort & Spa"></a>
+            <h3 class="hotel-card-title"><a class="hotel-card-title-link" href="#">Amara Resort & Spa</a></h3>
             <span class="hotel-type">Гостиница</span>
             <span class="hotel-price">от 4000 Р</span>
             <a class="hotel-card-detail-link button" href="#">Подробнее</a>
-            <button class="button hotel-to-favourites-button" type="submit">В избранное</button>
+            <a class="button hotel-to-favourites-button" href="#">В избранное</a>
             <span class="hotel-rating">Рейтинг: 8,5</span>
           </li>
           <li class="hotel-card">
-            <img class="hotel-card-image" src="#" alt="Villas at Poco Diablo">
-            <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+            <a class="hotel-image-link" href="#"><img class="hotel-card-image" src="#" alt="Villas at Poco Diablo"></a>
+            <h3 class="hotel-card-title"><a class="hotel-card-title-link" href="#">Villas at Poco Diablo</a></h3>
             <span class="hotel-type">Гостиница</span>
             <span class="hotel-price">от 5000 Р</span>
             <a class="hotel-card-detail-link button" href="#">Подробнее</a>
-            <button class="button hotel-favourites-button" type="submit">В избранном</button>
+            <a class="button hotel-favourites-button" href="#">В избранном</a>
             <span class="hotel-rating">Рейтинг: 9,2</span>
           </li>
           <li class="hotel-card">
-            <img class="hotel-card-image" src="#" alt="Desert Quail Inn">
-            <h3 class="hotel-card-title">Desert Quail Inn</h3>
+            <a class="hotel-image-link" href="#"><img class="hotel-card-image" src="#" alt="Desert Quail Inn"></a>
+            <h3 class="hotel-card-title"><a class="hotel-card-title-link" href="#">Desert Quail Inn</a></h3>
             <span class="hotel-type">Гостиница</span>
             <span class="hotel-price">от 2500 Р</span>
             <a class="hotel-card-detail-link button" href="#">Подробнее</a>
-            <button class="button hotel-to-favourites-button" type="submit">В избранное</button>
+            <a class="button hotel-to-favourites-button" href="#">В избранное</a>
             <span class="hotel-rating">Рейтинг: 6,9</span>
           </li>
           <li class="hotel-card">
-            <img class="hotel-card-image" src="#" alt="GreenTree Inn">
-            <h3 class="hotel-card-title">GreenTree Inn</h3>
+            <a class="hotel-image-link" href="#"><img class="hotel-card-image" src="#" alt="GreenTree Inn"></a>
+            <h3 class="hotel-card-title"><a class="hotel-card-title-link" href="#">GreenTree Inn</a></h3>
             <span class="hotel-type">Гостиница</span>
             <span class="hotel-price">от 1500 Р</span>
             <a class="hotel-card-detail-link button" href="#">Подробнее</a>
-            <button class="button hotel-to-favourites-button" type="submit">В избранное</button>
+            <a class="button hotel-to-favourites-button" href="#">В избранное</a>
             <span class="hotel-rating">Рейтинг: 5,0</span>
           </li>
         </ul>
