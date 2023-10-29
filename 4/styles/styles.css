@@ -74,21 +74,20 @@ body {
 }
 
 /*Advantages*/
-.advantages-content {
-  padding: 69px 0;
-}
 
 .advantages-content-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-top: 69px;
 }
 
 .advantages-content-description {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  padding-bottom: 69px;
 }
 
 .advantages-list {
@@ -100,12 +99,16 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-top: 103px;
 }
 
 .advantages-description {
-
   color: #333333;
+  padding-bottom: 103px;
+  padding-left: 85px;
+  padding-right: 85px;
 }
+
 
 .advantages-title-white {
   color: #ffffff;
@@ -114,18 +117,18 @@ body {
   color: #ffffff;
 }
 
+.advantages-title-last {
+  padding-top: 102px;
+}
+
+.advantages-description-last {
+  padding-bottom: 102px;
+}
+
 .advantages-item {
   width: 400px;
   height: 385px;
   background-color:rgba(131, 179, 211, 0.12);
-}
-
-.advantages-container {
-  padding: 103px 85px;
-}
-
-.advantages-container-last {
-  padding: 102px 85px;
 }
 
 .advantages-item-white {
@@ -137,21 +140,19 @@ body {
 }
 
 /*Recomendations*/
-.recommendations-content {
-  padding: 64px 0px;
-}
-
 .recommendations-content-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-top: 64px;
 }
 
 .recommendations-content-description {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  padding-bottom: 64px;
 }
 
 .recommendations-list {
@@ -163,10 +164,14 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-top: 80px;
+  margin: 0;
 }
 
 .recommendations-description {
   color: #333333;
+  padding-bottom: 80px;
+  margin: 0;
 }
 
 .recommendations-item {
@@ -177,10 +182,6 @@ body {
 
 .recommendations-center {
   background-color: #FFFFFF;
-}
-
-.recommendations-container {
-  padding: 80px 85px;
 }
 
 /*Search*/
