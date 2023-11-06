@@ -28,9 +28,6 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
-
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
 }
 
 /*Buttons general*/
@@ -122,6 +119,9 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  width: 620px;
+  padding-left: 290px;
+  padding-right: 290px;
   padding-top: 69px;
 }
 
@@ -129,7 +129,11 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  width: 651px;
+  padding-left: 274.5px;
+  padding-right: 274.5px;
   padding-bottom: 69px;
+
 }
 
 .advantages-list {
@@ -208,17 +212,23 @@ padding-bottom: 103px;*/
 
 /*Recomendations*/
 .recommendations-content-title {
+  width: 505px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-left: 348px;
+  padding-right: 348px;
   padding-top: 64px;
 }
 
 .recommendations-content-description {
+  width: 490px;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  padding-left: 355.5px;
+  padding-right: 355.5px;
   padding-bottom: 64px;
 }
 
@@ -253,6 +263,8 @@ padding-bottom: 103px;*/
 .recommendations-center {
   background-color: #FFFFFF;
 }
+
+
 
 /*Search*/
 .search-title {
@@ -490,6 +502,7 @@ padding-bottom: 103px;*/
 .catalog-view {
   display: flex;
   width: 1060px;
+  margin: 0 auto;
 }
 
 .hotel-card-title-link {
@@ -542,6 +555,10 @@ padding-bottom: 103px;*/
 
 .hotel-list {
   display: flex;
+  width: 1060px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto;
 }
 
 
