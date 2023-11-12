@@ -477,12 +477,32 @@ outline: 1px solid green;
   font-weight: 700;
   line-height: 78px;
   /*color: #FFFFFF;*/
+  margin: 0;
+  margin-bottom: 8px;
+  margin-left: 70px;
+  padding-top: 35px;
 }
 
 /*Breadcrumbs*/
+.breadcrumbs {
+  display: flex;
+  margin: 0 auto 40px auto;
+  padding: 0;
+  list-style-type: none;
+  width: 1060px;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
+  margin-left: 10px;
   /*color: inherit;*/
+}
+
+.breadcrumbs-link-icon {
+  min-width: 12px;
+  min-height: 12px;
+  margin-right: 10px;
+  outline: 1px solid green;
 }
 
 /*Filter*/
@@ -507,12 +527,14 @@ outline: 1px solid green;
   height: 412px;
  }
 
- .filter-result {
+  .filter-result {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  margin-right: 200px;
  }
 
  .catalog-filter {
@@ -523,7 +545,7 @@ outline: 1px solid green;
  .filter-hotels {
   width: 1060px;
   min-height: 160px;
-
+  margin: 0 auto;
  }
 
  .catalog-filter-group {
@@ -532,27 +554,45 @@ outline: 1px solid green;
 
  /*Buttons-view-cards*/
 .button-view-card {
+  display: block;
+  width: 24px;
+  height: 20px;
+  padding: 13px 11px;
+  border-radius: 4px;
+  border: 2px solid  #E5E5E5;
+  /*outline: 1px solid green;*/
   text-decoration: none;
 }
 
  .button-view-card-current {
-  border-radius: 4px;
   border: 2px solid  #000000;
 }
 
-/*.select-control {
+.button-view-card:not(:last-child) {
+  margin-right: 8px;
+}
+
+.select-control {
   width: 292px;
   padding: 14px 20px;
+  margin-right: 70px;
   font-size: 18px;
   line-height: 21px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
-}*/
+}
 
 /*Catalog of hotels*/
 .catalog-view {
   display: flex;
   width: 1060px;
+  margin: 50px auto 40px auto;
+
+}
+
+.view-card {
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
 }
 
@@ -562,38 +602,70 @@ outline: 1px solid green;
 }
 
 .hotel-card-title {
+  width: 300px;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   color: #000000;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
+.hotel-card {
+  width: 300px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.hotel-card:nth-child(3n) {
+  margin-right: 0;
+}
+
+
 .hotel-type {
+  display: inline-block;
+  width: 140px;
   color: #000000;
+  margin-right: 20px;
+  margin-bottom: 16px;
 }
 
 .hotel-price {
+  display: inline-block;
+  width: 140px;
+  text-align: right;
   color: #000000;
+}
+
+.hotel-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
 }
 
 .hotel-card-detail-link {
   display: block;
   width: 140px;
+  /*margin-right: 20px;*/
 }
 
 .hotel-to-favourites-button {
   display: block;
   width: 140px;
   background-color: #82B3D3;
+  margin-left: auto;
 }
 
 .hotel-favourites-button {
   display: block;
   width: 140px;
   background-color: #7DB54F;
+  margin-left: auto;
 }
 
 .hotel-rating {
+  display: inline-block;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -610,10 +682,23 @@ outline: 1px solid green;
   flex-wrap: wrap;
   padding: 0;
   margin: 0 auto;
+  list-style-type: none;
 }
 
 
 /*Pagination*/
+.pagination {
+  display: flex;
+  width: 1060px;
+  padding: 0;
+  list-style-type: none;
+  margin: 40px auto 60px auto;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .button-next {
   font-size: 22px;
   font-weight: 400;
@@ -621,29 +706,26 @@ outline: 1px solid green;
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 11.4px 24.6px 12.6px 23.5px;
   text-decoration: none;
+  border-radius: 4px;
+  background-color:  #82B3D3;
   color: #FFFFFF;
 }
 
+.pagination-link-double {
+  padding: 11.4px 18.6px 12.6px 18.5px;
+}
+
 .pagination-current {
+  background-color: #F2F2F2;
   color: #000000;
 }
 
-.pagination-item {
-  width: 60px;
-  height: 60px;
-  border-radius: 4px;
-  background-color:  #82B3D3;
-}
-
-.pagination-item-current {
-  background-color:  #F2F2F2;
-}
-
-.pagination {
-  display: flex;
-  width: 1060px;
-}
 
 /*Newsletter-catalog*/
 .newsletter-catalog {
