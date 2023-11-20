@@ -607,7 +607,6 @@ align-items: center;
 }
 
 .hotel-card-title {
-  grid-row: 2/3;
   grid-column: 1/-1;
   width: 300px;
   font-size: 24px;
@@ -643,12 +642,10 @@ align-items: center;
 } */
 
 .hotel-type {
-  grid-row: 3/4;
   color: #000000;
 }
 
 .hotel-price {
-  grid-row: 3/4;
   color: #000000;
   margin-left: auto;
 }
@@ -661,14 +658,13 @@ align-items: center;
 }*/
 
 .hotel-card-detail-link {
-  grid-row: 4/5;
+  /*grid-row: 4/5;*/
   /*display: block;*/
   /*width: 140px;*/
   /*margin-right: 20px;*/
 }
 
 .hotel-to-favourites-button {
-  grid-row: 4/5;
   display: block;
   /*width: 140px;*/
   background-color: #82B3D3;
@@ -676,7 +672,6 @@ align-items: center;
 }
 
 .hotel-favourites-button {
-  grid-row: 4/5;
   display: block;
   /*width: 140px;*/
   background-color: #7DB54F;
@@ -684,8 +679,6 @@ align-items: center;
 }
 
 .hotel-rating {
-  /*display: inline-block;*/
-  grid-row: 5/6;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
