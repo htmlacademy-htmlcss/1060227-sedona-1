@@ -24,8 +24,8 @@ body {
   flex-direction: column;
   min-height: 100%;
   max-width: 1200px;
-  padding-left: 40px;
-  padding-right: 40px;
+  /*padding-left: 40px;
+  padding-right: 40px;*/
   margin: 0 auto;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -48,6 +48,7 @@ body {
 
 /*Buttons general*/
 .button {
+  display: inline-block;
   font-family: inherit;
   font-weight: 700;
   text-align: center;
@@ -59,6 +60,7 @@ body {
   padding-top: 8px;
   padding-bottom: 8px;
   border: none;
+  cursor: pointer;
 }
 
 .button-small {
@@ -74,6 +76,7 @@ body {
 /*Navigation*/
 .navigation-link {
   display: block;
+  position: relative;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
@@ -103,15 +106,29 @@ body {
 }
 
 .navigation-user .navigation-link {
-min-width: 18px;
-min-height: 17px;
-padding: 22px 12px;
-/*outline: 1px solid green;*/
-align-items: center;
+  min-width: 18px;
+  min-height: 17px;
+  padding: 22px 12px;
+  /*outline: 1px solid green;*/
+  align-items: center;
 }
 
 .navigation-item:first-child {
   margin-left: 30px;
+}
+
+.navigation-link-current::before {
+  position: absolute;
+  right: 16px;
+  bottom: 0;
+  left: 16px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
+}
+
+.page-header-logo {
+  z-index: 1;
 }
 
 /*Main container*/
@@ -133,6 +150,7 @@ align-items: center;
 
 /*Hero*/
 .hero {
+  position: relative;
   background-image: url("../images/index-background.jpg");
   background-size: 100%auto;
   background-color: #ffffff;
@@ -140,8 +158,18 @@ align-items: center;
   background-repeat: no-repeat;
   width: 1200px;
   height: 485px;
+  margin-top: -6px;
 }
 
+.hero::after {
+  position: absolute;
+  background-image: url("../images/splitter.svg");
+  height: 57px;
+  bottom: 0;
+  width: 100%;
+  content: "";
+
+}
 /*Advantages*/
 
 .advantages-content-title {
@@ -185,13 +213,11 @@ align-items: center;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .advantages-description {
   color: #333333;
-  margin-bottom: 0;
-  margin-top: 30px;
 }
 
 .advantages-title-white {
@@ -222,6 +248,7 @@ align-items: center;
 }
 
 .advantages-container {
+  position: relative;
   width: 230px;
   min-height: 181px;
   padding: 103px 85px;
@@ -234,6 +261,24 @@ align-items: center;
 
 .advantages-container-center {
   min-height: 179px;
+}
+.advantages-title::after {
+  position: absolute;
+  top: 198.5px;
+  right: 170px;
+  left: 170px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.30);;
+  content: "";
+}
+.advantages-title-white::after {
+  position: absolute;
+  top: 188px;
+  right: 170px;
+  left: 170px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  content: "";
 }
 
 
@@ -299,6 +344,14 @@ align-items: center;
 .recommendations-container {
   padding: 80px 85px;
 }
+
+/*.recommendations-title::before {
+  content: "";
+  background-image: url("../images/accommodation.svg");
+  background-position: center;
+  background-size: 75px 72px;
+  background-repeat: no-repeat;
+}*/
 
 /*Search*/
 .search-title {
@@ -408,12 +461,14 @@ align-items: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
+
 }
 
 .footer-social-item {
   width: 47px;
   height: 40px;
   /*outline: 1px solid green;*/
+
 }
 
 .footer-contacts {
@@ -423,6 +478,11 @@ align-items: center;
 .footer-logo {
   width: 115px;
   margin-left: auto;
+}
+
+.social-icon {
+  position: absolute;
+
 }
 
 /*Buttons*/
@@ -437,14 +497,15 @@ align-items: center;
 }
 
 .button-submit {
-  width: 232px;
+  padding-left: 50px;
+  padding-right: 50px;
   border-radius: 0px 4px 4px 0px;
   background-color: #82B3D3;
 }
 
 .navigation-user .navigation-link-button {
-  display: block;
-  width: 92px;
+  /*display: block;
+  width: 92px;*/
   padding: 8px 34px;
   color: #FFFFFF;
   margin-top: 14px;
@@ -453,15 +514,15 @@ align-items: center;
 }
 
 .button-search {
-  display: block;
-  width: 276px;
+  /*display: block;
+  width: 276px;*/
   padding-left: 50px;
   padding-right: 50px;
   margin: 0 auto;
 }
 
 .social-button {
-  /*background-color: transparent;*/
+  background-color: transparent;
   padding: 0;
 }
 
