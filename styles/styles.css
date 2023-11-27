@@ -85,6 +85,14 @@ body {
   padding: 20px 16px;
 }
 
+.navigation-link:hover, .navigation-link:focus {
+  color: #756157;
+}
+
+.navigation-link:active {
+  color:rgba(117, 97, 87, 0.30);
+}
+
 .navigation {
   display: flex;
   width: 1060px;
@@ -130,6 +138,16 @@ body {
 .page-header-logo {
   z-index: 1;
 }
+
+.navigation-link-button:hover,
+.navigation-link-button:focus {
+  background-color: #615048;
+}
+
+/*.navigation-link-button:active {
+  background-color: #615048;
+  color: rgba(255, 255, 255, 0.30)
+}*/
 
 /*Main container*/
 .main-container {
@@ -212,12 +230,13 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 60px;
 }
 
 .advantages-description {
   color: #333333;
+  margin: 0;
 }
 
 .advantages-title-white {
@@ -250,7 +269,7 @@ body {
 .advantages-container {
   position: relative;
   width: 230px;
-  min-height: 181px;
+  /*min-height: 160px;*/
   padding: 103px 85px;
 }
 
@@ -260,11 +279,11 @@ body {
 }
 
 .advantages-container-center {
-  min-height: 179px;
+  /*min-height: 179px;*/
 }
 .advantages-title::after {
   position: absolute;
-  top: 198.5px;
+  top: 188px;
   right: 170px;
   left: 170px;
   height: 2px;
@@ -322,8 +341,38 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 30px;
+  margin-top: 102px;
   margin-bottom: 30px;
+}
+
+.accommodation::before {
+  position: absolute;
+  background-image: url("../images/accommodation.svg");
+  top: 80px;
+  width: 75px;
+  height: 72px;
+  content: "";
+}
+
+.food::before {
+  position: absolute;
+  background-image: url("../images/food.svg");
+  top: 80px;
+  left: 162.5px;
+  width: 75px;
+  height: 72px;
+  content: "";
+}
+
+.gift::before {
+  position: absolute;
+  background-image: url("../images/gift.svg");
+  background-repeat: no-repeat;
+  top: 80px;
+  left: 162.5px;
+  width: 75px;
+  height: 75px;
+  content: "";
 }
 
 .recommendations-description {
@@ -342,16 +391,10 @@ body {
 }
 
 .recommendations-container {
+  position: relative;
   padding: 80px 85px;
 }
 
-/*.recommendations-title::before {
-  content: "";
-  background-image: url("../images/accommodation.svg");
-  background-position: center;
-  background-size: 75px 72px;
-  background-repeat: no-repeat;
-}*/
 
 /*Search*/
 .search-title {
@@ -441,6 +484,24 @@ body {
   color: #000000;
 }
 
+.footer-contacts-address-phone:hover,
+.footer-contacts-address-phone:focus {
+  color: #756157;
+}
+.footer-contacts-address-phone:active {
+color: rgba(117, 97, 87, 0.30);
+}
+
+.footer-logo-link:hover,
+.footer-logo-link:focus {
+  color: #756157;
+}
+
+.footer-logo-link:active {
+  color: #756157;
+  opacity: 0.3;
+}
+
 .page-footer-container {
   display: flex;
   justify-content: space-between;
@@ -465,8 +526,11 @@ body {
 }
 
 .footer-social-item {
+  position: relative;
   width: 47px;
   height: 40px;
+  /*padding-right: 10px;
+  padding-left: 10px;*/
   /*outline: 1px solid green;*/
 
 }
@@ -477,12 +541,30 @@ body {
 
 .footer-logo {
   width: 115px;
-  margin-left: auto;
 }
 
 .social-icon {
   position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
 
+.social-button {
+  background-color: transparent;
+  padding: 0;
+  color: #83B3D3;
+}
+
+.social-button:hover, .social-button:focus {
+  color: #68A2CA;
+}
+
+.social-button:active {
+  color: #68A2CA;
+  opacity: 0.3;
 }
 
 /*Buttons*/
@@ -503,9 +585,15 @@ body {
   background-color: #82B3D3;
 }
 
+.button-submit:hover,  .button-submit:focus {
+  background-color: #68A2CA;
+}
+
+.button-submit:active {
+  color: rgba(255, 255, 255, 0.30);
+}
+
 .navigation-user .navigation-link-button {
-  /*display: block;
-  width: 92px;*/
   padding: 8px 34px;
   color: #FFFFFF;
   margin-top: 14px;
@@ -513,17 +601,24 @@ body {
   margin-left: 20px;
 }
 
+.navigation-user .navigation-link-button:active {
+  background-color: #615048;
+  color: rgba(255, 255, 255, 0.30)
+}
+
 .button-search {
-  /*display: block;
-  width: 276px;*/
   padding-left: 50px;
   padding-right: 50px;
   margin: 0 auto;
 }
 
-.social-button {
-  background-color: transparent;
-  padding: 0;
+.button-search:hover, .button-search:focus {
+  background-color: #615048;
+}
+
+.button-search:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.30);
 }
 
 .button-submit-catalog {
@@ -533,6 +628,10 @@ body {
 
 .button-reset {
   background-color: transparent;
+}
+
+.button:disabled {
+  background-color: #E5E5E5;
 }
 
 /*Catalog*/
