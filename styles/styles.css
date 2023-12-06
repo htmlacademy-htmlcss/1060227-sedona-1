@@ -625,11 +625,12 @@ color: rgba(117, 97, 87, 0.30);
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 80.68px;
-  right: 67.7px;
-  width: 19.6px;
-  height: 19.6px;
-  background-color: #ffffff;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  background-color: #F2F2F2;
+  border-radius: 50%;
   border: none;
   background-image: url("../images/close.svg");
   background-repeat: no-repeat;
@@ -641,6 +642,9 @@ color: rgba(117, 97, 87, 0.30);
   position: absolute;
 }*/
 
+.modal-title {
+  margin: 0;
+}
 
 /*Buttons*/
 .button-small {
