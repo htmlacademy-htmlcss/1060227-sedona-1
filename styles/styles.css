@@ -670,6 +670,10 @@ color: rgba(117, 97, 87, 0.30);
   margin-right: 46px;
 }
 
+.search-label {
+  margin-top: 12px;
+}
+
 .search-comment {
   /*display: flex;*/
   /*justify-content: center;*/
@@ -726,6 +730,7 @@ color: rgba(117, 97, 87, 0.30);
 .field-group-wrapper {
   display: grid;
   grid-template-columns: 247px 330px;
+  margin-bottom: 48px;
 }
 
 .field-group-number {
@@ -734,10 +739,12 @@ color: rgba(117, 97, 87, 0.30);
 }
 
 .number-guests-change {
+  position: relative;
   width: 40px;
   height: 48px;
   background-color: #F2F2F2;
 }
+
 
 .number-guests {
   width: 11px;
@@ -745,6 +752,9 @@ color: rgba(117, 97, 87, 0.30);
   padding: 14px 10px;
   border: none;
   background-color: #F2F2F2;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
 }
 
 .number-guests::-webkit-outer-spin-button,
@@ -760,6 +770,10 @@ color: rgba(117, 97, 87, 0.30);
   border: none;
 }
 
+.reduce-number-children {
+  margin-left: 46px;
+}
+
 .increase-number-adults,
 .increase-number-children {
   border-top-right-radius: 4px;
@@ -769,10 +783,15 @@ color: rgba(117, 97, 87, 0.30);
 
 .field-group-number {
   display: flex;
-
 }
 
+.field-group-number-children {
+  justify-content: flex-end;
+}
 
+.field-group-number-children .search-label {
+  margin-right: 10px;
+}
 
 .tooltip {
   position: relative;
@@ -788,10 +807,11 @@ color: rgba(117, 97, 87, 0.30);
   background-repeat: no-repeat;
   background-position: center;
   display: block;
+  margin-top: 12px;
 }
 
 .tooltip-text {
-  background-color: #000000;
+  background-color: #333333;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
   color: #FFFFFF;
   font-size: 16px;
@@ -799,15 +819,92 @@ color: rgba(117, 97, 87, 0.30);
   font-weight: 400;
   padding: 15px 18px 18px 22px;
   border-radius: 10px;
-  display: block;
   width: 216px;
+  position: absolute;
+  top: 52px;
+  left: -115px;
+  display: none;
 }
 
-/*.search-modal-button {*/
-/*  display: block;*/
+.tooltip-text:before {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 9px;
+  top: -8px;
+  left: 118px;
+  background-image: url("../images/triangle.svg");
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.search-modal-button {
+  padding: 18px 77px;
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: #83B3D3;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.search-modal-button:hover,
+.search-modal-button:focus {
+  background-color: #68A2CA;
+}
+
+.search-modal-button:active {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.30);
+}
+.minus-guests,
+.plus-guests {
+  color: #756157;
+  opacity: 0.3;
+}
+
+.minus-guests:hover,
+.plus-guests:hover {
+  color: #000000;
+}
+
+.minus-guests:focus:after,
+.plus-guests:focus:after {
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  color: #000000;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 3px solid #82B3D3;
+  content: "";
+}
+
+.minus-guests {
+  position: absolute;
+  top: 23px;
+}
+
+.minus-guests:active,
+.plus-guests:active {
+  color: #756157;
+  opacity: 0.3;
+}
+
+  /*.minus-guests:hover,*/
+/*.plus-guests:hover {*/
+/*  color: #000000;*/
 /*}*/
 
-/*Buttons*/
+  /*Buttons*/
 .button-small {
   font-size: 16px;
   line-height: 20px;
