@@ -1595,6 +1595,7 @@ color: rgb(170, 170, 170);
 }
 
 .hotel-list {
+  position: relative;
   /*display: flex;
   flex-wrap: wrap;*/
   display: grid;
@@ -1605,6 +1606,15 @@ color: rgb(170, 170, 170);
   list-style-type: none;
   gap: 20px;
   /*margin-bottom: 40px;*/
+}
+
+.hotel-list::after {
+  position: absolute;
+  top: 936px;
+  width: 1060px;
+  height: 1px;
+  background-color: #E6E6E6;
+  content: "";
 }
 
 .hotel-image-link {
@@ -1618,7 +1628,7 @@ color: rgb(170, 170, 170);
   width: 1060px;
   padding: 0;
   list-style-type: none;
-  margin: 40px auto 60px auto;
+  margin: 78px auto 60px auto;
 }
 
 .pagination-item:not(:last-child) {
