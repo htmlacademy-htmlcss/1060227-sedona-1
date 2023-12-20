@@ -377,6 +377,7 @@ body {
 
 .recommendations-list {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -1108,6 +1109,7 @@ color: rgba(117, 97, 87, 0.30);
 /*Breadcrumbs*/
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto 40px auto;
   padding: 0;
   list-style-type: none;
@@ -1162,12 +1164,13 @@ color: rgba(117, 97, 87, 0.30);
 .catalog-view {
   display: flex;
   width: 1060px;
-  margin: 50px auto 40px auto;
+  margin: 50px auto 39px auto;
   align-items: center;
 }
 
 .view-card {
   display: flex;
+  flex-wrap: wrap;
   margin-left:  auto;
 }
 
@@ -1209,6 +1212,7 @@ color: rgba(117, 97, 87, 0.30);
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 32px;
+  padding: 0;
 }
 
 .catalog-filter-item {
@@ -1229,7 +1233,7 @@ color: rgba(117, 97, 87, 0.30);
   background-repeat: no-repeat;
   background-color: #83B3D3;
   color: #FFFFFF;
-  height: 412px;
+  min-height: 412px;
   margin-top: -11px;
  }
 
@@ -1309,8 +1313,8 @@ color: rgba(117, 97, 87, 0.30);
 
 .control-mark {
   position: absolute;
-  top: 0;
-  left: 2px;
+  top: 1px;
+  left: -1px;
   width: 20px;
   height: 20px;
   background-color: #ffffff;
@@ -1441,6 +1445,7 @@ color: rgb(170, 170, 170);
   width: 24px;
   height: 20px;
   padding: 12px 10px;
+  /* margin-bottom: 5px; */
   border-radius: 4px;
   border: 2px solid  #E5E5E5;
   text-decoration: none;
@@ -1456,17 +1461,18 @@ color: rgb(170, 170, 170);
 
 .select-control {
   width: 292px;
-  padding: 12px 20px;
-  /*padding-right: 40px;*/
+  padding: 13.5px 40px 12px 20px;
   font-size: 18px;
   line-height: 21px;
+  letter-spacing: -1px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
   margin-left: 200px;
+  margin-right: 70px;
   appearance: none;
   background-image: url("../images/arrow-down.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 18px center;
 }
 
 .select-control:hover {
@@ -1604,7 +1610,7 @@ color: rgb(170, 170, 170);
   padding: 0;
   margin: 0 auto;
   list-style-type: none;
-  gap: 20px;
+  gap: 18px 20px;
   /*margin-bottom: 40px;*/
 }
 
@@ -1625,6 +1631,7 @@ color: rgb(170, 170, 170);
 /*Pagination*/
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   width: 1060px;
   padding: 0;
   list-style-type: none;
@@ -1635,11 +1642,7 @@ color: rgb(170, 170, 170);
   margin-right: 8px;
 }
 
-.button-next {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 26px;
-}
+
 
 .pagination-link {
   display: block;
@@ -1651,6 +1654,13 @@ color: rgb(170, 170, 170);
   border-radius: 4px;
   background-color:  #82B3D3;
   color: #FFFFFF;
+}
+
+.button-next {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 16px 22px 18px 21px;
 }
 
 .pagination-item .button-next {
