@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: > 2% and last 1 version
-*/
-
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -223,15 +216,13 @@ body {
   content: "";
 
 }
-/*Advantages*/
 
+/*Advantages*/
 .advantages-content-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  max-width: 620px;
-  padding-top: 69px;
   margin: 0 auto 25px;
   text-align: center;
 }
@@ -240,11 +231,15 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-  max-width: 651px;
-  padding-bottom: 69px;
-  margin-bottom: 21px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
+}
+
+.advantages-content-wrapper {
+  padding: 69px 272px;
+  margin-bottom: 21px;
+  text-align: center;
 }
 
 .advantages-list {
@@ -564,7 +559,7 @@ body {
 }
 
 .footer-contacts {
-  width: 331px;
+  max-width: 335px;
 }
 
 .footer-logo {
@@ -586,7 +581,6 @@ body {
   background-color: transparent;
   width: 47px;
   height: 40px;
-  /* padding: 13px 12px; */
   color: #83B3D3;
 }
 
@@ -656,7 +650,6 @@ body {
 .modal-close-button:active svg {
   opacity: 0.3;
 }
-
 
 .modal-title {
   margin-top: 0;
@@ -902,11 +895,6 @@ body {
   background-color: #68A2CA;
   color: rgba(255, 255, 255, 0.30);
 }
-/*.minus-guests,*/
-/*.plus-guests {*/
-/*  color: #756157;*/
-/*  opacity: 0.3;*/
-/*}*/
 
 .minus-guests {
   position: absolute;
@@ -1003,15 +991,6 @@ body {
   margin: 0 auto;
 }
 
-/*.button-search:hover, .button-search:focus {
-  background-color: #615048;
-}
-
-.button-search:active {
-  background-color: #756157;
-  color: rgba(255, 255, 255, 0.30);
-}*/
-
 .button-submit-catalog {
   background-color: #82B3D3;
   padding-left: 50px;
@@ -1058,10 +1037,7 @@ body {
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
-  /*color: #FFFFFF;*/
   margin: 0 0 8px 70px;
-  /*margin-bottom: 8px;*/
-  /*margin-left: 70px;*/
   padding-top: 35px;
 }
 
@@ -1122,15 +1098,21 @@ body {
 /*Filter*/
 .catalog-view {
   display: flex;
+  flex-wrap: wrap;
   width: 1060px;
   margin: 50px auto 39px auto;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .view-card {
   display: flex;
+  min-width: 160px;
+  min-height: 48px;
   flex-wrap: wrap;
+  justify-content: flex-end;
   margin-left:  auto;
+  gap: 8px;
 }
 
 .view-cards {
@@ -1363,9 +1345,12 @@ body {
 .field-price::-webkit-outer-spin-button,
 .field-price::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  /* -moz-appearance: none; */
           appearance: none;
   margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 .field-price {
@@ -1403,7 +1388,6 @@ body {
   width: 24px;
   height: 20px;
   padding: 12px 10px;
-  /* margin-bottom: 5px; */
   border-radius: 4px;
   border: 2px solid  #E5E5E5;
   text-decoration: none;
@@ -1411,10 +1395,6 @@ body {
 
 .button-view-card-current {
   border: 2px solid  #000000;
-}
-
-.button-view-card:not(:last-child) {
-  margin-right: 8px;
 }
 
 .select-control {
@@ -1426,7 +1406,7 @@ body {
   border-radius: 4px;
   border: 2px solid #E5E5E5;
   margin-left: 200px;
-  margin-right: 70px;
+  margin-right: auto;
   -webkit-appearance: none;
           appearance: none;
   background-image: url("../images/arrow-down.svg");
@@ -1450,7 +1430,6 @@ body {
 }
 
 /*Catalog of hotels*/
-
 .hotel-card-title-link {
   text-decoration: none;
   color: #000000;
@@ -1580,10 +1559,6 @@ body {
   list-style-type: none;
   margin: 78px auto 60px auto;
 }
-
-/* .pagination-item:not(:last-child) {
-  margin-right: 8px;
-} */
 
 .pagination-link {
   display: block;
