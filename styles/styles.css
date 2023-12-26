@@ -912,8 +912,7 @@ body {
   fill-opacity: 0.3;
 }
 
-.minus-guests:hover path,
-.plus-guests:hover path {
+.number-guests-change:hover svg  {
   fill: #000000;
   fill-opacity: 1;
 }
@@ -929,14 +928,12 @@ body {
   content: "";
 }
 
-.minus-guests:focus,
-.plus-guests:focus {
+.number-guests-change:focus svg {
   fill: #000000;
   fill-opacity: 1;
 }
 
-.minus-guests:active,
-.plus-guests:active {
+.number-guests-change:active svg {
   fill: #756157;
   opacity: 0.2;
 }
