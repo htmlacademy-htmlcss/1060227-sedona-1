@@ -614,7 +614,7 @@ body {
   margin: auto;
   padding: 64px 70px;
   background-color: #ffffff;
-
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 }
 
 .modal-search {
@@ -672,6 +672,10 @@ body {
   line-height: 24px;
   text-transform: capitalize;
   margin-top: 12px;
+}
+
+.field-group-number input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 .search-label-number {
@@ -846,7 +850,6 @@ body {
 
 .tooltip-text {
   background-color: #333333;
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
@@ -858,6 +861,7 @@ body {
   top: 52px;
   left: -115px;
   display: none;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
 }
 
 .tooltip-text::before {
